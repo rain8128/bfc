@@ -1,2 +1,4 @@
 # bfc
-A Brainf**k compiler
+A Brainf**k compiler.
+
+`,` is not implemented.
