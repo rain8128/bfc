@@ -343,7 +343,7 @@ int main(int argc, char** argv){
     sections[2].VirtualAddress = sections[1].VirtualAddress + 0x1000;
 
     hdr.OptionalHeader.DataDirectory[1].VirtualAddress = sections[1].VirtualAddress;
-    hdr.OptionalHeader.DataDirectory[2].VirtualAddress = sections[1].VirtualAddress + 0x28;
+    hdr.OptionalHeader.DataDirectory[12].VirtualAddress = sections[1].VirtualAddress + 0x28;
 
     hdr.OptionalHeader.SizeOfImage = 0x1000 
         + (codesize+hdr.OptionalHeader.SectionAlignment-1)/hdr.OptionalHeader.SectionAlignment*hdr.OptionalHeader.SectionAlignment
