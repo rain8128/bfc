@@ -64,6 +64,7 @@ ISTACK* newIstack(){
     }
     stack->size = 0;
     stack->max = 1024;
+    return stack;
 }
 
 int extendIstack(ISTACK* stack){
